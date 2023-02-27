@@ -24,3 +24,12 @@ Breadcrumbs::register('setting', function($breadcrumbs, $module = 'Setting', $in
 });
 
 // new docs routes
+Breadcrumbs::register('frontend', function($breadcrumbs, $module = 'Setting', $index_route = '#', $current_page = null)
+{
+    $breadcrumbs->parent('home');
+    $breadcrumbs->push($module, $index_route);
+
+    if (isset($current_page)) {
+        $breadcrumbs->push($current_page);
+    }
+});

@@ -19,6 +19,10 @@
     <link rel="stylesheet" href="{{ asset('css/sweetalert.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/toastr.min.css') }}">
 
+    {{-- code-blocks --}}
+    {{-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/styles/vs.min.css"/> --}}
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
+
     @stack('head')
 </head>
 
@@ -101,6 +105,11 @@
     <script src="{{ asset('js/moment.min.js') }}"></script>
     <script src="{{ asset('js/bootstrap-datepicker.min.js') }}"></script>
     <script src="{{ asset('js/daterangepicker.js') }}"></script>
+
+    {{-- code-blocks --}}
+    {{-- <script src="https://cdn.jsdelivr.net/npm/@heppokofrontend/html-code-block-element/lib/html-code-block-element.common.min.js"></script> --}}
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
 
     @stack('scripts-include')
     <script>

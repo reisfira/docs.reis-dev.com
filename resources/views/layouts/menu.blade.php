@@ -9,6 +9,7 @@
         </li>
         <li class="nav-item">
             @include('layouts.menu.sample')
+            @include('layouts.menu.frontend-plugin')
         </li>
     </ul>
 </ul>
