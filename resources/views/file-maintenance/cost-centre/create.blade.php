@@ -1,7 +1,12 @@
 @extends('layouts.master')
 @section('title', 'Cost Centre')
 @section('subheader', 'Cost Centre')
-@section('breadcrumbs', Breadcrumbs::render('cost-centre', 'Create'))
+@section('breadcrumbs', Breadcrumbs::render(
+    'file-maintenance',
+    'Cost Centre',
+    route('file-maintenance.cost-centre.index'),
+    'Create',
+))
 
 @section('content')
     {!! Form::open(['url' => route('file-maintenance.cost-centre.store'), 'method' => 'POST']) !!}

@@ -1,7 +1,12 @@
 @extends('layouts.master')
 @section('title', 'Debtor')
 @section('subheader', 'Debtor')
-@section('breadcrumbs', Breadcrumbs::render('debtor', 'Create'))
+@section('breadcrumbs', Breadcrumbs::render(
+    'file-maintenance',
+    'Debtor',
+    route('file-maintenance.debtor.index'),
+    'Create',
+))
 
 @section('content')
 <div class="sys-params"></div>

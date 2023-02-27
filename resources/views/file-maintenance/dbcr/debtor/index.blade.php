@@ -1,7 +1,7 @@
 @extends('layouts.master')
 @section('title', 'Debtor')
 @section('subheader', 'Debtor')
-@section('breadcrumbs', Breadcrumbs::render('debtor'))
+@section('breadcrumbs', Breadcrumbs::render('file-maintenance', 'Debtor'))
 
 @section('content')
 <div class="sys-params" data-edit-route="{{ route('file-maintenance.debtor.edit', 'id') }}"></div>

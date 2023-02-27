@@ -1,7 +1,7 @@
 @extends('layouts.master')
 @section('title', 'Cost Centre')
 @section('subheader', 'Cost Centre')
-@section('breadcrumbs', Breadcrumbs::render('cost-centre'))
+@section('breadcrumbs', Breadcrumbs::render('file-maintenance', 'Cost Centre', route('file-maintenance.cost-centre.index')))
 
 @section('content')
 <div class="sys-params" data-edit-route="{{ route('file-maintenance.cost-centre.edit', 'id') }}"></div>

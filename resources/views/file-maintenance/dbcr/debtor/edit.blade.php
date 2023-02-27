@@ -1,7 +1,12 @@
 @extends('layouts.master')
 @section('title', $resource->details)
 @section('subheader', 'Debtor')
-@section('breadcrumbs', Breadcrumbs::render('debtor', $resource->details))
+@section('breadcrumbs', Breadcrumbs::render(
+    'file-maintenance',
+    'Debtor',
+    route('file-maintenance.debtor.index'),
+    $resource->details,
+))
 
 @section('content')
 <div class="sys-params"></div>
@@ -19,7 +24,8 @@
         @include('components.form.general.delete-master', [
             'route' => route('file-maintenance.debtor.destroy', $resource->id),
             'confirmation_prompt' => "Confirm delete this debtor {$resource->details}?",
-            'deletable' => !$has_transactions,
+            // 'deletable' => !$has_transactions,
+            'deletable' => false,
         ])
     </div>
     <div class="col-2">

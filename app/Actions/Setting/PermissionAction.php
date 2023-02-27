@@ -14,24 +14,10 @@ class PermissionAction
         $actions = [ 'Create', 'Update', 'Read', 'Delete', 'Print' ];
         $modules_by_group = [
             'File Maintenance' => [
-                'Chart of Account',
                 'Cost Centre',
                 'Debtor',
-                'Creditor',
                 'Area',
                 'Salesman',
-                'Item',
-                'Payment Method',
-                'Currency',
-                'Exchange Rate',
-                'Industrial Classification',
-                'Tariff Code',
-                'Tax Code',
-            ],
-            'Transaction' => [
-                'Transaction',
-                'Invoice',
-                'Receipt Voucher',
             ],
             'Setting' => [
                 'User',
