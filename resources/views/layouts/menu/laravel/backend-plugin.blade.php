@@ -2,16 +2,17 @@
     <a href="#" class="nav-link">
         <i class="nav-icon far fa-square"></i>
         <p>
-            BACKEND PLUGIN
+            BACKEND
             <i class="fas fa-angle-left right"></i>
         </p>
     </a>
 
     <ul class="nav nav-treeview">
-        @include('layouts.menu.backend.pdf')
-        @include('layouts.menu.backend.breadcrumbs')
-        @include('layouts.menu.backend.fortify')
-        @include('layouts.menu.backend.permission')
+        @include('layouts.menu.laravel.backend.self-defined')
+        @include('layouts.menu.laravel.backend.pdf')
+        @include('layouts.menu.laravel.backend.breadcrumbs')
+        @include('layouts.menu.laravel.backend.fortify')
+        @include('layouts.menu.laravel.backend.permission')
     </ul>
 </li>
 {{--

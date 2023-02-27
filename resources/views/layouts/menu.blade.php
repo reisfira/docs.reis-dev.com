@@ -8,6 +8,8 @@
             </a>
         </li>
 
+        {{-- laravel section --}}
+        <li class="nav-header"><small>LARAVEL DEV</small></li>
         <li class="nav-item">
             <li class="nav-item">
                 <a href="#" class="nav-link">
@@ -16,9 +18,22 @@
                 </a>
             </li>
 
-            @include('layouts.menu.frontend-plugin')
-            @include('layouts.menu.backend-plugin')
-            @include('layouts.menu.sample')
+            @include('layouts.menu.laravel.frontend-plugin')
+            @include('layouts.menu.laravel.backend-plugin')
+            @include('layouts.menu.laravel.sample')
+        </li>
+
+        {{-- ionic section --}}
+        <li class="nav-header"><small>IONIC DEV</small></li>
+        <li class="nav-item">
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <i class="nav-icon fas fa-folder-tree"></i>
+                    <p>PROJECT STRUCTURE</p>
+                </a>
+            </li>
+
+            @include('layouts.menu.ionic.plugin')
         </li>
     </ul>
 </ul>

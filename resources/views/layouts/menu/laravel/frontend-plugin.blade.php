@@ -2,21 +2,22 @@
     <a href="#" class="nav-link">
         <i class="nav-icon fas fa-diamond"></i>
         <p>
-            FRONTEND PLUGIN
+            FRONTEND
             <i class="fas fa-angle-left right"></i>
         </p>
     </a>
 
     <ul class="nav nav-treeview">
-        @include('layouts.menu.frontend.adminlte')
-        @include('layouts.menu.frontend.jquery')
-        @include('layouts.menu.frontend.bootstrap')
-        @include('layouts.menu.frontend.select2')
-        @include('layouts.menu.frontend.inputmask')
-        @include('layouts.menu.frontend.notification')
-        @include('layouts.menu.frontend.icheck')
-        @include('layouts.menu.frontend.datatable')
-        @include('layouts.menu.frontend.chartjs')
+        @include('layouts.menu.laravel.frontend.self-defined')
+        @include('layouts.menu.laravel.frontend.adminlte')
+        @include('layouts.menu.laravel.frontend.jquery')
+        @include('layouts.menu.laravel.frontend.bootstrap')
+        @include('layouts.menu.laravel.frontend.select2')
+        @include('layouts.menu.laravel.frontend.inputmask')
+        @include('layouts.menu.laravel.frontend.notification')
+        @include('layouts.menu.laravel.frontend.icheck')
+        @include('layouts.menu.laravel.frontend.datatable')
+        @include('layouts.menu.laravel.frontend.chartjs')
     </ul>
 </li>
 {{--
