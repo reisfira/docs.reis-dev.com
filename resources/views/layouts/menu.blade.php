@@ -7,9 +7,18 @@
                 <p>HOME</p>
             </a>
         </li>
+
         <li class="nav-item">
-            @include('layouts.menu.sample')
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <i class="nav-icon fas fa-folder-tree"></i>
+                    <p>PROJECT STRUCTURE</p>
+                </a>
+            </li>
+
             @include('layouts.menu.frontend-plugin')
+            @include('layouts.menu.backend-plugin')
+            @include('layouts.menu.sample')
         </li>
     </ul>
 </ul>
