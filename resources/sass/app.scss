@@ -1,0 +1,115 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Font awesome webfonts
+$fa-font-path: "../webfonts";
+
+// Body
+$body-bg: #f8fafc;
+
+// Typography
+$font-family-sans-serif: 'Nunito', sans-serif;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+
+// Colors
+$blue: #3490dc;
+$indigo: #6574cd;
+$purple: #9561e2;
+$pink: #f66d9b;
+$red: #e3342f;
+$orange: #f6993f;
+$yellow: #ffed4a;
+$green: #38c172;
+$teal: #4dc0b5;
+$cyan: #6cb2eb;
+
+$red-solid: #E57373;
+$blue-solid: #6cb2eb;
+$dark-green-solid: #AED581;
+$dark-blue-solid: #1565C0;
+$dark-grey-solid: #E0E0E0;
+
+$dark-blue: darken(#428bca, 6.5%);
+$dark-green: darken(#5cb85c, 6.5%);
+$dark-grey: #E0E0E0;
+
+$very-light-blue: #b3e5fc;
+$very-light-grey: #dfdfe8;
+
+// gradient colors - dark lime
+$lime-1: #00a631;
+$lime-2: #00a63e;
+$lime-3: #00a64c;
+$lime-4: #00a65a;
+$lime-5: #108c75;
+$lime-6: #108c80;
+
+// gradient colors - red
+$red-1: #dd486d;
+$red-2: #dd4854;
+$red-3: #dd4848;
+$red-4: #dd5448;
+$red-5: #dd6148;
+$red-6: #dd6d48;
+
+// blue
+$blue-1: #00a1b7;
+$blue-2: #0092b7;
+$blue-3: #0082b7;
+$blue-4: #0073b7;
+$blue-5: #0064b7;
+$blue-6: #0055b7;
+
+$input-placeholder-color: #D0D2D7;
+
+// Library imports
+@import '~bootstrap/scss/bootstrap';
+@import '~admin-lte/dist/css/adminlte.css';
+
+@import "~@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "~@fortawesome/fontawesome-free/scss/solid.scss";
+@import "~@fortawesome/fontawesome-free/scss/brands.scss";
+
+// require('icheck-bootstrap');
+@import "~icheck-bootstrap/icheck-bootstrap.css";
+
+// Custom CSS
+ol.breadcrumb {
+    background-color: white !important;
+    margin-bottom: 0 !important;
+}
+
+.pointer { cursor: pointer; }
+
+.required:after{
+    content:'*';
+    color:red;
+    padding-left:5px;
+}
+
+.floating-button {
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:50px;
+    right:40px;
+    background-color:$dark-blue;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    box-shadow: 2px 2px 3px #999;
+
+    // set the icon's margin from top
+    .fas { margin-top:12px; }
+}
+
+.floating-button:hover { color:#CCC; }
+
+// make bootstrap datepicker bigger
+.datepicker {
+    .table-condensed {
+        width: 250px;
+        height:250px;
+    }
+}

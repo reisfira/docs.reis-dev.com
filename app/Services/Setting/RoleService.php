@@ -1,0 +1,24 @@
+<?php
+
+namespace App\Services\Setting;
+
+use Spatie\Permission\Models\Role;
+
+class RoleService
+{
+    public static function getDatatable($request)
+    {
+        $left_text_condition = get_datatable_filter_condition($request['left_text'], $request['left_text_column'], true);
+        $context_text_condition = get_datatable_filter_condition($request['context_text'], $request['context_text_column']);
+        $condition = "WHERE 1 = 1 {$left_text_condition} {$context_text_condition} ";
+        $ordering = get_datatable_ordering($request, 'name asc');
+
+        $table = 'roles';
+        $datatable_query = "SELECT * FROM {$table} {$condition} ORDER BY {$ordering} ";
+        $count_query = "SELECT COUNT(*) as amount FROM {$table} {$condition} ";
+
+        $datatable = generate_datatable($table, $datatable_query, $request, $condition, null, $count_query);
+
+        return json_encode($datatable);
+    }
+}

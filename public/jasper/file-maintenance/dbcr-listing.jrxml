@@ -1,0 +1,679 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.0.final using JasperReports Library version 6.20.0-2bc7ab61c56f459e8176eb05c7705e145cd400ad  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="area-list" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" isFloatColumnFooter="true" uuid="0739df83-b87d-4c12-be5b-7f750424ffe5">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="debtor-json"/>
+	<parameter name="company_code" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="company_name" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="company_no" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="company_address" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="company_tel_no" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="company_fax_no" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="company_email" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="print_date" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="report_title" class="java.lang.String"/>
+	<queryString language="json">
+		<![CDATA[data]]>
+	</queryString>
+	<field name="id" class="java.lang.Integer">
+		<property name="net.sf.jasperreports.json.field.expression" value="id"/>
+		<fieldDescription><![CDATA[id]]></fieldDescription>
+	</field>
+	<field name="account_code" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="account_code"/>
+		<fieldDescription><![CDATA[account_code]]></fieldDescription>
+	</field>
+	<field name="ccentre_code" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="ccentre_code"/>
+		<fieldDescription><![CDATA[ccentre_code]]></fieldDescription>
+	</field>
+	<field name="full_code" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="full_code"/>
+		<fieldDescription><![CDATA[full_code]]></fieldDescription>
+	</field>
+	<field name="is_trade_account" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="is_trade_account"/>
+		<fieldDescription><![CDATA[is_trade_account]]></fieldDescription>
+	</field>
+	<field name="generate_interest" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="generate_interest"/>
+		<fieldDescription><![CDATA[generate_interest]]></fieldDescription>
+	</field>
+	<field name="email_state_of_account" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="email_state_of_account"/>
+		<fieldDescription><![CDATA[email_state_of_account]]></fieldDescription>
+	</field>
+	<field name="name" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="name"/>
+		<fieldDescription><![CDATA[name]]></fieldDescription>
+	</field>
+	<field name="addr1" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="addr1"/>
+		<fieldDescription><![CDATA[addr1]]></fieldDescription>
+	</field>
+	<field name="addr2" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="addr2"/>
+		<fieldDescription><![CDATA[addr2]]></fieldDescription>
+	</field>
+	<field name="addr3" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="addr3"/>
+		<fieldDescription><![CDATA[addr3]]></fieldDescription>
+	</field>
+	<field name="addr4" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="addr4"/>
+		<fieldDescription><![CDATA[addr4]]></fieldDescription>
+	</field>
+	<field name="tel_no" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="tel_no"/>
+		<fieldDescription><![CDATA[tel_no]]></fieldDescription>
+	</field>
+	<field name="fax_no" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="fax_no"/>
+		<fieldDescription><![CDATA[fax_no]]></fieldDescription>
+	</field>
+	<field name="hp_no" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="hp_no"/>
+		<fieldDescription><![CDATA[hp_no]]></fieldDescription>
+	</field>
+	<field name="email" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="email"/>
+		<fieldDescription><![CDATA[email]]></fieldDescription>
+	</field>
+	<field name="brn_no" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="brn_no"/>
+		<fieldDescription><![CDATA[brn_no]]></fieldDescription>
+	</field>
+	<field name="contact_person" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="contact_person"/>
+		<fieldDescription><![CDATA[contact_person]]></fieldDescription>
+	</field>
+	<field name="contact_person_tel_no" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="contact_person_tel_no"/>
+		<fieldDescription><![CDATA[contact_person_tel_no]]></fieldDescription>
+	</field>
+	<field name="contact_person_position" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="contact_person_position"/>
+		<fieldDescription><![CDATA[contact_person_position]]></fieldDescription>
+	</field>
+	<field name="area_code" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="area_code"/>
+		<fieldDescription><![CDATA[area_code]]></fieldDescription>
+	</field>
+	<field name="salesman_code" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="salesman_code"/>
+		<fieldDescription><![CDATA[salesman_code]]></fieldDescription>
+	</field>
+	<field name="salesman_name" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="salesman_name"/>
+		<fieldDescription><![CDATA[salesman_name]]></fieldDescription>
+	</field>
+	<field name="currency_code" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="currency_code"/>
+		<fieldDescription><![CDATA[currency_code]]></fieldDescription>
+	</field>
+	<field name="credit_term" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="credit_term"/>
+		<fieldDescription><![CDATA[credit_term]]></fieldDescription>
+	</field>
+	<field name="credit_term_days" class="java.lang.Integer">
+		<property name="net.sf.jasperreports.json.field.expression" value="credit_term_days"/>
+		<fieldDescription><![CDATA[credit_term_days]]></fieldDescription>
+	</field>
+	<field name="credit_limit" class="java.math.BigDecimal">
+		<property name="net.sf.jasperreports.json.field.expression" value="credit_limit"/>
+		<fieldDescription><![CDATA[credit_limit]]></fieldDescription>
+	</field>
+	<field name="opening" class="java.math.BigDecimal">
+		<property name="net.sf.jasperreports.json.field.expression" value="opening"/>
+		<fieldDescription><![CDATA[opening]]></fieldDescription>
+	</field>
+	<field name="mark" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="mark"/>
+		<fieldDescription><![CDATA[mark]]></fieldDescription>
+	</field>
+	<field name="memo" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="memo"/>
+		<fieldDescription><![CDATA[memo]]></fieldDescription>
+	</field>
+	<field name="gst_no" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="gst_no"/>
+		<fieldDescription><![CDATA[gst_no]]></fieldDescription>
+	</field>
+	<field name="gst_code" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="gst_code"/>
+		<fieldDescription><![CDATA[gst_code]]></fieldDescription>
+	</field>
+	<field name="gst_vdate" class="java.sql.Date">
+		<property name="net.sf.jasperreports.json.field.expression" value="gst_vdate"/>
+		<fieldDescription><![CDATA[gst_vdate]]></fieldDescription>
+	</field>
+	<field name="misc" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="misc"/>
+		<fieldDescription><![CDATA[misc]]></fieldDescription>
+	</field>
+	<field name="reference" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="reference"/>
+		<fieldDescription><![CDATA[reference]]></fieldDescription>
+	</field>
+	<field name="reference_remark" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="reference_remark"/>
+		<fieldDescription><![CDATA[reference_remark]]></fieldDescription>
+	</field>
+	<field name="active" class="java.lang.Integer">
+		<property name="net.sf.jasperreports.json.field.expression" value="active"/>
+		<fieldDescription><![CDATA[active]]></fieldDescription>
+	</field>
+	<field name="commission_special_case" class="java.lang.Integer">
+		<property name="net.sf.jasperreports.json.field.expression" value="commission_special_case"/>
+		<fieldDescription><![CDATA[commission_special_case]]></fieldDescription>
+	</field>
+	<field name="created_by" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="created_by"/>
+		<fieldDescription><![CDATA[created_by]]></fieldDescription>
+	</field>
+	<field name="updated_by" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="updated_by"/>
+		<fieldDescription><![CDATA[updated_by]]></fieldDescription>
+	</field>
+	<field name="deleted_by" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="deleted_by"/>
+		<fieldDescription><![CDATA[deleted_by]]></fieldDescription>
+	</field>
+	<field name="created_at" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="created_at"/>
+		<fieldDescription><![CDATA[created_at]]></fieldDescription>
+	</field>
+	<field name="updated_at" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="updated_at"/>
+		<fieldDescription><![CDATA[updated_at]]></fieldDescription>
+	</field>
+	<field name="deleted_at" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="deleted_at"/>
+		<fieldDescription><![CDATA[deleted_at]]></fieldDescription>
+	</field>
+	<field name="details" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="details"/>
+		<fieldDescription><![CDATA[details]]></fieldDescription>
+	</field>
+	<field name="gst_vdate_dmy" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="gst_vdate_dmy"/>
+		<fieldDescription><![CDATA[gst_vdate_dmy]]></fieldDescription>
+	</field>
+	<field name="credit_limit_string" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="credit_limit_string"/>
+		<fieldDescription><![CDATA[credit_limit_string]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<pageHeader>
+		<band height="59">
+			<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<textField isBlankWhenNull="true">
+				<reportElement x="0" y="0" width="555" height="21" uuid="d4c5d12f-2c44-4a6d-b9b7-0b3c61069c01"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{company_name}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="0" y="21" width="555" height="19" uuid="58a267f5-7f84-48bc-b47b-9d2d1ccb99c8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{company_no}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="0" y="40" width="555" height="19" uuid="d1545194-8f30-40f6-92c3-c86b3cf1846d"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="DejaVu Serif" size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{report_title}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="20" splitType="Stretch">
+			<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.grid.JSSGridBagLayout"/>
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<staticText>
+				<reportElement x="0" y="0" width="27" height="20" uuid="afcf74f4-95b9-4fbe-893a-b117cce37ed7">
+					<property name="com.jaspersoft.layout.grid.x" value="-1"/>
+					<property name="com.jaspersoft.layout.grid.y" value="-1"/>
+					<property name="com.jaspersoft.layout.grid.weight.x" value="0.5"/>
+					<property name="com.jaspersoft.layout.grid.weight.y" value="1.0"/>
+					<property name="com.jaspersoft.layout.grid.rowspan" value="1"/>
+					<property name="com.jaspersoft.layout.grid.colspan" value="1"/>
+					<property name="com.jaspersoft.layout.grid.weight.fixed" value="false"/>
+				</reportElement>
+				<box topPadding="0" leftPadding="4" bottomPadding="0" rightPadding="4">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[#]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="27" y="0" width="79" height="20" uuid="9fdf9a28-7b4d-4a56-9caa-60462e9cedc9">
+					<property name="com.jaspersoft.layout.grid.x" value="-1"/>
+					<property name="com.jaspersoft.layout.grid.y" value="-1"/>
+					<property name="com.jaspersoft.layout.grid.weight.x" value="1.5"/>
+					<property name="com.jaspersoft.layout.grid.weight.y" value="1.0"/>
+					<property name="com.jaspersoft.layout.grid.rowspan" value="1"/>
+					<property name="com.jaspersoft.layout.grid.colspan" value="1"/>
+					<property name="com.jaspersoft.layout.grid.weight.fixed" value="false"/>
+				</reportElement>
+				<box topPadding="0" leftPadding="4" bottomPadding="0" rightPadding="4">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Code]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="106" y="0" width="449" height="20" uuid="3bc18101-1a78-42ec-bf40-d44b47c56ce4">
+					<property name="com.jaspersoft.layout.grid.x" value="-1"/>
+					<property name="com.jaspersoft.layout.grid.y" value="-1"/>
+					<property name="com.jaspersoft.layout.grid.weight.x" value="8.5"/>
+					<property name="com.jaspersoft.layout.grid.weight.y" value="1.0"/>
+					<property name="com.jaspersoft.layout.grid.rowspan" value="1"/>
+					<property name="com.jaspersoft.layout.grid.colspan" value="1"/>
+					<property name="com.jaspersoft.layout.grid.weight.fixed" value="false"/>
+				</reportElement>
+				<box topPadding="0" leftPadding="4" bottomPadding="0" rightPadding="4">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Details]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="18" splitType="Stretch">
+			<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.grid.JSSGridBagLayout"/>
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<textField>
+				<reportElement x="0" y="0" width="27" height="18" uuid="7c35d1ce-2d71-4748-884d-4a4207b03968">
+					<property name="com.jaspersoft.layout.grid.x" value="-1"/>
+					<property name="com.jaspersoft.layout.grid.y" value="-1"/>
+					<property name="com.jaspersoft.layout.grid.weight.x" value="0.5"/>
+					<property name="com.jaspersoft.layout.grid.weight.y" value="1.0"/>
+					<property name="com.jaspersoft.layout.grid.rowspan" value="1"/>
+					<property name="com.jaspersoft.layout.grid.colspan" value="1"/>
+					<property name="com.jaspersoft.layout.grid.weight.fixed" value="false"/>
+				</reportElement>
+				<box topPadding="0" leftPadding="4" bottomPadding="2" rightPadding="4"/>
+				<textElement textAlignment="Left" verticalAlignment="Bottom">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{COLUMN_COUNT}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="27" y="0" width="79" height="18" uuid="65101887-c735-446a-b595-070e31b5fd8b">
+					<property name="com.jaspersoft.layout.grid.x" value="-1"/>
+					<property name="com.jaspersoft.layout.grid.y" value="-1"/>
+					<property name="com.jaspersoft.layout.grid.weight.x" value="1.5"/>
+					<property name="com.jaspersoft.layout.grid.weight.y" value="1.0"/>
+					<property name="com.jaspersoft.layout.grid.rowspan" value="1"/>
+					<property name="com.jaspersoft.layout.grid.colspan" value="1"/>
+					<property name="com.jaspersoft.layout.grid.weight.fixed" value="false"/>
+				</reportElement>
+				<box topPadding="0" leftPadding="4" bottomPadding="2" rightPadding="4"/>
+				<textElement textAlignment="Left" verticalAlignment="Bottom">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{full_code}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="106" y="0" width="449" height="18" uuid="c5f7bafb-281b-43a4-acad-f4765e60a336">
+					<property name="com.jaspersoft.layout.grid.x" value="-1"/>
+					<property name="com.jaspersoft.layout.grid.y" value="-1"/>
+					<property name="com.jaspersoft.layout.grid.weight.x" value="8.5"/>
+					<property name="com.jaspersoft.layout.grid.weight.y" value="1.0"/>
+					<property name="com.jaspersoft.layout.grid.rowspan" value="1"/>
+					<property name="com.jaspersoft.layout.grid.colspan" value="1"/>
+					<property name="com.jaspersoft.layout.grid.weight.fixed" value="false"/>
+				</reportElement>
+				<box topPadding="0" leftPadding="4" bottomPadding="2" rightPadding="4"/>
+				<textElement textAlignment="Left" verticalAlignment="Bottom">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="14">
+			<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.grid.JSSGridBagLayout"/>
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<printWhenExpression><![CDATA[!$F{addr1}.isEmpty()]]></printWhenExpression>
+			<staticText>
+				<reportElement x="0" y="0" width="106" height="14" isRemoveLineWhenBlank="true" uuid="51f76a25-27e2-4337-a2a4-e2a56a51e5db">
+					<property name="com.jaspersoft.layout.grid.x" value="-1"/>
+					<property name="com.jaspersoft.layout.grid.y" value="-1"/>
+					<property name="com.jaspersoft.layout.grid.weight.x" value="2.0"/>
+					<property name="com.jaspersoft.layout.grid.weight.y" value="1.0"/>
+					<property name="com.jaspersoft.layout.grid.rowspan" value="1"/>
+					<property name="com.jaspersoft.layout.grid.colspan" value="1"/>
+					<property name="com.jaspersoft.layout.grid.weight.fixed" value="false"/>
+				</reportElement>
+				<textElement>
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="106" y="0" width="449" height="14" isRemoveLineWhenBlank="true" uuid="56a064fe-0893-4600-ada6-5b859317fafc">
+					<property name="com.jaspersoft.layout.grid.x" value="-1"/>
+					<property name="com.jaspersoft.layout.grid.y" value="-1"/>
+					<property name="com.jaspersoft.layout.grid.weight.x" value="8.5"/>
+					<property name="com.jaspersoft.layout.grid.weight.y" value="1.0"/>
+					<property name="com.jaspersoft.layout.grid.rowspan" value="1"/>
+					<property name="com.jaspersoft.layout.grid.colspan" value="1"/>
+					<property name="com.jaspersoft.layout.grid.weight.fixed" value="false"/>
+				</reportElement>
+				<box leftPadding="4" bottomPadding="2" rightPadding="4"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{addr1}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="14">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.grid.JSSGridBagLayout"/>
+			<printWhenExpression><![CDATA[!$F{addr2}.isEmpty()]]></printWhenExpression>
+			<staticText>
+				<reportElement x="0" y="0" width="106" height="14" isRemoveLineWhenBlank="true" uuid="d892af94-33fe-4e52-a60c-282e567a2d1e">
+					<property name="com.jaspersoft.layout.grid.x" value="-1"/>
+					<property name="com.jaspersoft.layout.grid.y" value="-1"/>
+					<property name="com.jaspersoft.layout.grid.weight.x" value="2.0"/>
+					<property name="com.jaspersoft.layout.grid.weight.y" value="1.0"/>
+					<property name="com.jaspersoft.layout.grid.rowspan" value="1"/>
+					<property name="com.jaspersoft.layout.grid.colspan" value="1"/>
+					<property name="com.jaspersoft.layout.grid.weight.fixed" value="false"/>
+				</reportElement>
+				<textElement>
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="106" y="0" width="449" height="14" isRemoveLineWhenBlank="true" uuid="2fa8d33b-30fe-4a63-899c-9fb2c171cfea">
+					<property name="com.jaspersoft.layout.grid.x" value="-1"/>
+					<property name="com.jaspersoft.layout.grid.y" value="-1"/>
+					<property name="com.jaspersoft.layout.grid.weight.x" value="8.5"/>
+					<property name="com.jaspersoft.layout.grid.weight.y" value="1.0"/>
+					<property name="com.jaspersoft.layout.grid.rowspan" value="1"/>
+					<property name="com.jaspersoft.layout.grid.colspan" value="1"/>
+					<property name="com.jaspersoft.layout.grid.weight.fixed" value="false"/>
+				</reportElement>
+				<box leftPadding="4" bottomPadding="2" rightPadding="4"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{addr2}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="14">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.grid.JSSGridBagLayout"/>
+			<printWhenExpression><![CDATA[!$F{addr3}.isEmpty()]]></printWhenExpression>
+			<staticText>
+				<reportElement x="0" y="0" width="106" height="14" isRemoveLineWhenBlank="true" uuid="1c1951e9-e6fb-4a06-9e58-d5c413dfe7c7">
+					<property name="com.jaspersoft.layout.grid.x" value="-1"/>
+					<property name="com.jaspersoft.layout.grid.y" value="-1"/>
+					<property name="com.jaspersoft.layout.grid.weight.x" value="2.0"/>
+					<property name="com.jaspersoft.layout.grid.weight.y" value="1.0"/>
+					<property name="com.jaspersoft.layout.grid.rowspan" value="1"/>
+					<property name="com.jaspersoft.layout.grid.colspan" value="1"/>
+					<property name="com.jaspersoft.layout.grid.weight.fixed" value="false"/>
+				</reportElement>
+				<textElement>
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="106" y="0" width="449" height="14" isRemoveLineWhenBlank="true" uuid="97da2adf-21e0-416b-a647-0556bfb121a1">
+					<property name="com.jaspersoft.layout.grid.x" value="-1"/>
+					<property name="com.jaspersoft.layout.grid.y" value="-1"/>
+					<property name="com.jaspersoft.layout.grid.weight.x" value="8.5"/>
+					<property name="com.jaspersoft.layout.grid.weight.y" value="1.0"/>
+					<property name="com.jaspersoft.layout.grid.rowspan" value="1"/>
+					<property name="com.jaspersoft.layout.grid.colspan" value="1"/>
+					<property name="com.jaspersoft.layout.grid.weight.fixed" value="false"/>
+				</reportElement>
+				<box leftPadding="4" bottomPadding="2" rightPadding="4"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{addr3}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="14">
+			<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.grid.JSSGridBagLayout"/>
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<printWhenExpression><![CDATA[!$F{addr4}.isEmpty()]]></printWhenExpression>
+			<staticText>
+				<reportElement x="0" y="0" width="106" height="14" isRemoveLineWhenBlank="true" uuid="8a29844f-51d9-42a6-a49f-d486c3345d37">
+					<property name="com.jaspersoft.layout.grid.x" value="-1"/>
+					<property name="com.jaspersoft.layout.grid.y" value="-1"/>
+					<property name="com.jaspersoft.layout.grid.weight.x" value="2.0"/>
+					<property name="com.jaspersoft.layout.grid.weight.y" value="1.0"/>
+					<property name="com.jaspersoft.layout.grid.rowspan" value="1"/>
+					<property name="com.jaspersoft.layout.grid.colspan" value="1"/>
+					<property name="com.jaspersoft.layout.grid.weight.fixed" value="false"/>
+				</reportElement>
+				<textElement>
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="106" y="0" width="449" height="14" isRemoveLineWhenBlank="true" uuid="5ae2606d-d5df-48a7-875d-e0c6ab40dbb9">
+					<property name="com.jaspersoft.layout.grid.x" value="-1"/>
+					<property name="com.jaspersoft.layout.grid.y" value="-1"/>
+					<property name="com.jaspersoft.layout.grid.weight.x" value="8.5"/>
+					<property name="com.jaspersoft.layout.grid.weight.y" value="1.0"/>
+					<property name="com.jaspersoft.layout.grid.rowspan" value="1"/>
+					<property name="com.jaspersoft.layout.grid.colspan" value="1"/>
+					<property name="com.jaspersoft.layout.grid.weight.fixed" value="false"/>
+				</reportElement>
+				<box leftPadding="4" bottomPadding="2" rightPadding="4"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{addr4}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="14">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.grid.JSSGridBagLayout"/>
+			<printWhenExpression><![CDATA[!$F{tel_no}.isEmpty() || !$F{fax_no}.isEmpty()]]></printWhenExpression>
+			<staticText>
+				<reportElement x="0" y="0" width="106" height="14" isRemoveLineWhenBlank="true" uuid="87447e5e-1833-4c6f-aeaa-115729eda54a">
+					<property name="com.jaspersoft.layout.grid.x" value="-1"/>
+					<property name="com.jaspersoft.layout.grid.y" value="-1"/>
+					<property name="com.jaspersoft.layout.grid.weight.x" value="2.0"/>
+					<property name="com.jaspersoft.layout.grid.weight.y" value="1.0"/>
+					<property name="com.jaspersoft.layout.grid.rowspan" value="1"/>
+					<property name="com.jaspersoft.layout.grid.colspan" value="1"/>
+					<property name="com.jaspersoft.layout.grid.weight.fixed" value="false"/>
+				</reportElement>
+				<textElement>
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="106" y="0" width="106" height="14" isRemoveLineWhenBlank="true" uuid="260e0a71-623a-44a9-bd12-fe37f4360ac9">
+					<property name="com.jaspersoft.layout.grid.x" value="-1"/>
+					<property name="com.jaspersoft.layout.grid.y" value="-1"/>
+					<property name="com.jaspersoft.layout.grid.weight.x" value="2.0"/>
+					<property name="com.jaspersoft.layout.grid.weight.y" value="1.0"/>
+					<property name="com.jaspersoft.layout.grid.rowspan" value="1"/>
+					<property name="com.jaspersoft.layout.grid.colspan" value="1"/>
+					<property name="com.jaspersoft.layout.grid.weight.fixed" value="false"/>
+				</reportElement>
+				<box leftPadding="4" bottomPadding="2" rightPadding="4"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Tel : " + $F{tel_no}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="212" y="0" width="106" height="14" isRemoveLineWhenBlank="true" uuid="34aca4c1-e01e-49b1-bb22-2dbcc761fa7a">
+					<property name="com.jaspersoft.layout.grid.x" value="-1"/>
+					<property name="com.jaspersoft.layout.grid.y" value="-1"/>
+					<property name="com.jaspersoft.layout.grid.weight.x" value="2.0"/>
+					<property name="com.jaspersoft.layout.grid.weight.y" value="1.0"/>
+					<property name="com.jaspersoft.layout.grid.rowspan" value="1"/>
+					<property name="com.jaspersoft.layout.grid.colspan" value="1"/>
+					<property name="com.jaspersoft.layout.grid.weight.fixed" value="false"/>
+				</reportElement>
+				<box leftPadding="4" bottomPadding="2" rightPadding="4"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Fax : " + $F{fax_no}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="318" y="0" width="237" height="14" uuid="ad6d56ad-d2af-45a5-8618-d5f4f05499b9">
+					<property name="com.jaspersoft.layout.grid.x" value="-1"/>
+					<property name="com.jaspersoft.layout.grid.y" value="-1"/>
+					<property name="com.jaspersoft.layout.grid.weight.x" value="4.5"/>
+					<property name="com.jaspersoft.layout.grid.weight.y" value="1.0"/>
+					<property name="com.jaspersoft.layout.grid.rowspan" value="1"/>
+					<property name="com.jaspersoft.layout.grid.colspan" value="1"/>
+					<property name="com.jaspersoft.layout.grid.weight.fixed" value="false"/>
+				</reportElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+		</band>
+		<band height="14">
+			<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.grid.JSSGridBagLayout"/>
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<printWhenExpression><![CDATA[!$F{contact_person}.isEmpty()]]></printWhenExpression>
+			<staticText>
+				<reportElement x="0" y="0" width="106" height="14" isRemoveLineWhenBlank="true" uuid="594db57a-9742-4c51-8542-9b13248a1bff">
+					<property name="com.jaspersoft.layout.grid.x" value="-1"/>
+					<property name="com.jaspersoft.layout.grid.y" value="-1"/>
+					<property name="com.jaspersoft.layout.grid.weight.x" value="2.0"/>
+					<property name="com.jaspersoft.layout.grid.weight.y" value="1.0"/>
+					<property name="com.jaspersoft.layout.grid.rowspan" value="1"/>
+					<property name="com.jaspersoft.layout.grid.colspan" value="1"/>
+					<property name="com.jaspersoft.layout.grid.weight.fixed" value="false"/>
+				</reportElement>
+				<textElement>
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="106" y="0" width="449" height="14" isRemoveLineWhenBlank="true" uuid="389c091a-3ec2-4dfe-9c06-383aabbb51e0">
+					<property name="com.jaspersoft.layout.grid.x" value="-1"/>
+					<property name="com.jaspersoft.layout.grid.y" value="-1"/>
+					<property name="com.jaspersoft.layout.grid.weight.x" value="8.5"/>
+					<property name="com.jaspersoft.layout.grid.weight.y" value="1.0"/>
+					<property name="com.jaspersoft.layout.grid.rowspan" value="1"/>
+					<property name="com.jaspersoft.layout.grid.colspan" value="1"/>
+					<property name="com.jaspersoft.layout.grid.weight.fixed" value="false"/>
+				</reportElement>
+				<box leftPadding="4" bottomPadding="2" rightPadding="4"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Contact Person : " + $F{contact_person} + "    Tel: " + $F{contact_person_tel_no}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="14">
+			<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.grid.JSSGridBagLayout"/>
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<printWhenExpression><![CDATA[!$F{credit_term}.isEmpty()]]></printWhenExpression>
+			<staticText>
+				<reportElement x="0" y="0" width="106" height="14" isRemoveLineWhenBlank="true" uuid="7b7235e8-db49-466e-9f65-40ebd8ae73fa">
+					<property name="com.jaspersoft.layout.grid.x" value="-1"/>
+					<property name="com.jaspersoft.layout.grid.y" value="-1"/>
+					<property name="com.jaspersoft.layout.grid.weight.x" value="2.0"/>
+					<property name="com.jaspersoft.layout.grid.weight.y" value="1.0"/>
+					<property name="com.jaspersoft.layout.grid.rowspan" value="1"/>
+					<property name="com.jaspersoft.layout.grid.colspan" value="1"/>
+					<property name="com.jaspersoft.layout.grid.weight.fixed" value="false"/>
+				</reportElement>
+				<textElement>
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="106" y="0" width="449" height="14" isRemoveLineWhenBlank="true" uuid="94b2e32d-5eb8-48cc-9211-21687188d497">
+					<property name="com.jaspersoft.layout.grid.x" value="-1"/>
+					<property name="com.jaspersoft.layout.grid.y" value="-1"/>
+					<property name="com.jaspersoft.layout.grid.weight.x" value="8.5"/>
+					<property name="com.jaspersoft.layout.grid.weight.y" value="1.0"/>
+					<property name="com.jaspersoft.layout.grid.rowspan" value="1"/>
+					<property name="com.jaspersoft.layout.grid.colspan" value="1"/>
+					<property name="com.jaspersoft.layout.grid.weight.fixed" value="false"/>
+				</reportElement>
+				<box leftPadding="4" bottomPadding="2" rightPadding="4"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Credit Term : " + $F{credit_term} + "     Credit Limit : " + $F{credit_limit_string}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="30">
+			<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<staticText>
+				<reportElement x="0" y="15" width="555" height="15" uuid="5a522419-64fa-4010-abaf-2cb1d0cd26ca"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<text><![CDATA[<----------------- End of Report ----------------->]]></text>
+			</staticText>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="68">
+			<line>
+				<reportElement x="0" y="10" width="555" height="1" uuid="e5e3cde2-c669-4e5a-8b6d-841cda37fa57"/>
+			</line>
+			<textField>
+				<reportElement x="0" y="10" width="180" height="20" uuid="ebbbf10b-c514-4617-bf14-a05e820d1eb5"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Print Date : " + $P{print_date}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="410" y="10" width="100" height="20" uuid="2a3ce3a0-e5ad-4378-bae4-9959f07c8060"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Page " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="510" y="10" width="45" height="20" uuid="1e631b3d-1d1f-4e3b-9cbd-48fc1dbf18f3"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[" of " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+</jasperReport>
