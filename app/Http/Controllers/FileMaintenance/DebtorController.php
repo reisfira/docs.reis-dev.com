@@ -32,8 +32,8 @@ class DebtorController extends Controller
         $data['cost_centre_codes'] = CostCentre::orderBy('code')->get()->pluck('detail', 'code')->toArray();
         $data['area_codes'] = Area::orderBy('code')->get()->pluck('detail', 'code')->toArray();
         $data['salesman_codes'] = Salesman::orderBy('code')->get()->pluck('detail', 'code')->toArray();
-        $data['currency_codes'] = Currency::orderBy('code')->get()->pluck('detail', 'code')->toArray();
-        $data['tax_codes'] = TaxCode::where('type', 'GST')->orderBy('code')->get()->pluck('detail', 'code')->toArray();
+        $data['currency_codes'] = ['RM' => 'RM'];
+        $data['tax_codes'] = [];
 
         return view('file-maintenance.dbcr.debtor.create', $data);
     }
@@ -60,12 +60,10 @@ class DebtorController extends Controller
         $data['cost_centre_codes'] = CostCentre::orderBy('code')->get()->pluck('detail', 'code')->toArray();
         $data['area_codes'] = Area::orderBy('code')->get()->pluck('detail', 'code')->toArray();
         $data['salesman_codes'] = Salesman::orderBy('code')->get()->pluck('detail', 'code')->toArray();
-        $data['currency_codes'] = Currency::orderBy('code')->get()->pluck('detail', 'code')->toArray();
-        $data['tax_codes'] = TaxCode::where('type', 'GST')->orderBy('code')->get()->pluck('detail', 'code')->toArray();
+        $data['currency_codes'] = ['RM' => 'RM'];
+        $data['tax_codes'] = [];
         $data['resource'] = $dbcr['resource'];
         $data['has_transactions'] = $dbcr['has_transactions'];
-        $data['opening_bills'] = $dbcr['opening_bills'];
-        $data['opening_payments'] = $dbcr['opening_payments'];
 
         return view('file-maintenance.dbcr.debtor.edit', $data);
     }

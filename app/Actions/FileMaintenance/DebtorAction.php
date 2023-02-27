@@ -5,8 +5,6 @@ namespace App\Actions\FileMaintenance;
 use Illuminate\Http\Request;
 
 use App\Models\FileMaintenance\Debtor;
-use App\Models\FileMaintenance\OpeningBill;
-use App\Models\FileMaintenance\OpeningPayment;
 use App\Models\Setting\Setting;
 
 use App\Services\Utility\JasperService;
@@ -21,8 +19,6 @@ class DebtorAction
         $data = [];
         $data['resource'] = $resource;
         $data['has_transactions'] = DeletableService::ledger($resource->full_code);
-        $data['opening_bills'] = OpeningBill::where('account_code', $resource->full_code)->get();
-        $data['opening_payments'] = OpeningPayment::where('account_code', $resource->full_code)->get();
 
         return $data;
     }
