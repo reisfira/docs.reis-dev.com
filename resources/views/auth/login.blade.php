@@ -38,11 +38,11 @@
                     </div>
                 </form>
             </div>
-            <div class="card-footer bg-white text-center">
+            {{-- <div class="card-footer bg-white text-center">
                 <p class="mb-0">
                     <a href="{{ route('register') }}">Register a new membership</a>
                 </p>
-            </div>
+            </div> --}}
 
         </div>
     </div>
