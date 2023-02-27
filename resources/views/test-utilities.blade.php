@@ -4,7 +4,7 @@
 @section('content')
 <div class="row">
     <div class="col-6">
-        <div class="card">
+        <div class="card card-primary">
             <div class="card-header">General</div>
             <div class="card-body">
                 @include('components.form.general.text', ['name' => 'text_1', 'value' => 'Text 1'])
@@ -14,7 +14,7 @@
 
                 @include('components.form.general.text-w-label-lookup', ['name' => 'text_3', 'label' => 'Label Lookup 3', 'value' => 'Text 3'])
 
-                @include('components.form.general.radio', ['name' => 'radio_1'])
+                @include('components.form.general.radio', ['name' => 'radio_1', 'id' => 'radio_1', 'label' => 'Radio 1'])
 
                 @include('components.form.general.checkbox', ['name' => 'checkbox_1'])
 
@@ -26,17 +26,26 @@
     </div>
 
     <div class="col-6">
-        <div class="card">
+        <div class="card card-primary">
             <div class="card-header">Reporting</div>
             <div class="card-body">
 
-                <button type="button" class="btn btn-success report"
-                    data-form-class=".test-template" data-form-title="Test Report">
-                    Test Report
-                </button>
+                <div class="form-group">
+                    <button type="button" class="btn btn-info text-white report"
+                        data-form-class=".test-template" data-form-title="Test Report">
+                        Test Report
+                    </button>
+                </div>
 
                 <div class="test-template">
-                    @include('components.form.reporting.range', [ 'name' => 'category', 'label' => 'Category', 'table' => 'categories', 'columns' => [ 'code' => 'Code', 'description' => 'Description', ] ])
+                    @include('components.form.reporting.range', [
+                        'name' => 'area',
+                        'label' => 'Area',
+                        'table' => 'area',
+                        'lookup_url' => route('utilities.lookup.datatable'),
+                        'context' => '.test-template',
+                        'columns' => [ 'code' => 'Code', 'description' => 'Description', ]
+                    ])
                 </div>
 
             </div>

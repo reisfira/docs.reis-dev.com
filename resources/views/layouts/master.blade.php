@@ -36,16 +36,6 @@
     <div class="global-params" data-app-url="{{ url('/') }}"
         {{-- select2 ajax --}}
         data-select2-debtor-account-code-route="{{ route('select2.fetch-debtor-account-code') }}"
-        data-select2-creditor-account-code-route="{{ route('select2.fetch-creditor-account-code') }}"
-        data-select2-ledger-account-code-route="{{ route('select2.fetch-ledger-account-code') }}"
-        data-select2-item-code-route="{{ route('select2.fetch-item-code') }}"
-        data-select2-tax-code-route="{{ route('select2.fetch-tax-code') }}"
-        data-select2-payment-method-route="{{ route('select2.fetch-payment-method') }}"
-
-        {{-- account code fetch --}}
-        data-debtor-fetch-route="{{ route('file-maintenance.debtor.fetch-account-code') }}"
-        data-creditor-fetch-route="{{ route('file-maintenance.creditor.fetch-account-code') }}"
-        data-ledger-fetch-route="{{ route('chart-of-account.ledger.fetch-account-code') }}"
     ></div>
 
     <div class="wrapper" id="app">

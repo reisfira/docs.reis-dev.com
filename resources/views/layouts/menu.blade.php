@@ -8,11 +8,7 @@
             </a>
         </li>
         <li class="nav-item">
-            @include('layouts.menu.chart-of-account')
-            @include('layouts.menu.file-maintenance')
-            @include('layouts.menu.transaction')
-            @include('layouts.menu.setting')
-
+            @include('layouts.menu.sample')
         </li>
     </ul>
 </ul>
