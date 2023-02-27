@@ -19,6 +19,7 @@ use App\Http\Controllers\Docs\Frontend\Plugin\Select2Controller;
 
 Route::view('welcome', 'welcome')->name('welcome');
 Route::get('/', [ HomeController::class, 'index' ])->name('home');
+Route::get('profile', [ HomeController::class, 'profile' ])->name('profile');
 
 Route::middleware(['auth'])->group(function () {
     Route::get('home', [ HomeController::class, 'index' ]);

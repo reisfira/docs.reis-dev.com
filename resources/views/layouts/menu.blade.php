@@ -8,6 +8,13 @@
             </a>
         </li>
 
+        <li class="nav-item">
+            <a href="{{ route('profile') }}" class="nav-link">
+                <i class="fas fa-user nav-icon"></i>
+                <p>PROFILE</p>
+            </a>
+        </li>
+
         {{-- laravel section --}}
         <li class="nav-header"><small>LARAVEL DEV</small></li>
         <li class="nav-item">

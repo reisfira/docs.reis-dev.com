@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'KSM Cloud Account'),
+    'name' => env('APP_NAME', 'Reis Dev Docs'),
 
     /*
     |--------------------------------------------------------------------------
