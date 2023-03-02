@@ -3,9 +3,6 @@
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\HomeController;
-use App\Http\Controllers\Docs\Frontend\Plugin\Select2Controller;
-
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -28,16 +25,7 @@ Route::middleware(['auth'])->group(function () {
 
     require __DIR__.'/samples.php';
 
-    Route::group([
-        'as' => 'frontend.',
-        'prefix' => 'frontend',
-    ], function () {
+    require __DIR__.'/frontend.php';
 
-        Route::group([
-            'as' => 'plugin.',
-            'prefix' => 'plugin',
-        ], function () {
-            Route::get('select2', [ Select2Controller::class, 'index' ])->name('select2');
-        });
-    });
+    require __DIR__.'/backend.php';
 });

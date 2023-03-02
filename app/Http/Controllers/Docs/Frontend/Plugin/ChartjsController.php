@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Docs\Frontend\Plugin;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
-class Select2Controller extends Controller
+class ChartjsController extends Controller
 {
     public function simple()
     {

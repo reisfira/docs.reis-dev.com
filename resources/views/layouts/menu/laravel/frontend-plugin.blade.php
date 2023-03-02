@@ -15,7 +15,6 @@
         @include('layouts.menu.laravel.frontend.select2')
         @include('layouts.menu.laravel.frontend.inputmask')
         @include('layouts.menu.laravel.frontend.notification')
-        @include('layouts.menu.laravel.frontend.icheck')
         @include('layouts.menu.laravel.frontend.datatable')
         @include('layouts.menu.laravel.frontend.chartjs')
     </ul>

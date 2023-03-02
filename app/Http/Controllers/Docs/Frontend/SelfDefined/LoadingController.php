@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Http\Controllers\Docs\Frontend\Plugin;
+namespace App\Http\Controllers\Docs\Frontend\SelfDefined;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
-class Select2Controller extends Controller
+class LoadingController extends Controller
 {
-    public function simple()
+    public function loading()
     {
         $data = [];
         $data['sample'] = trim(file_get_contents(resource_path('views/components/form/general/select2-w-label.blade.php')));
