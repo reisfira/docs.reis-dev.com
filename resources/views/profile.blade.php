@@ -30,7 +30,8 @@
                                 <div class="timeline-footer">
                                     <a class="btn btn-primary btn-sm px-3" href="{{ asset('files/transcript.pdf') }}" target="blank">Transcript</a>
                                     <a class="btn btn-info btn-sm text-white px-3" href="{{ asset('files/award-letter.pdf') }}" target="blank">Award Letter</a>
-                                    <a class="btn btn-secondary btn-sm px-3" data-toggle="popover" data-content="No softcopy version yet. I need to remind myself to scan it">Certificate</a>
+                                    <a class="btn btn-info btn-sm text-white px-3" href="{{ asset('files/undergrad-certificate.pdf') }}" target="blank">Certificate (Copy)</a>
+                                    {{-- <a class="btn btn-secondary btn-sm px-3" data-toggle="popover" data-content="No softcopy version yet. I need to remind myself to scan it">Certificate</a> --}}
 
                                 </div>
                             </div>
