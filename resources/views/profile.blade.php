@@ -140,6 +140,31 @@
                     </div>
                 </div>
             </div>
+
+            <div class="card card-info">
+                <div class="card-header">
+                    <h5>TRAITS & ABILITIES</h5>
+                </div>
+                <div class="card-body">
+                    <strong>TECHNICAL PROBLEM-SOLVING SKILLS</strong>
+                    <ul>
+                        <li>Ability to develop a database structures and queries with low complexity</li>
+                        <li>Analyze problem and determine a solution, fix, and/or workarounds in a given scenario</li>
+                    </ul>
+
+                    <strong>ADAPTABILITY & SELF LEARNING</strong>
+                    <ul>
+                        <li>Able to switch between programming languages; e.g.: PHP to Javascript to Jquery to Typescript</li>
+                        <li>Able to understand and deploy systems on different types of servers</li>
+                        <li>Able to keep up with new programming knowledge through self-learning</li>
+                    </ul>
+
+                    <strong>COMMUNICATION</strong>
+                    <li>Delivered the presentation and training of new/existing systems to customers</li>
+                    <li>Taught programming languages, concepts, and some domain knowledges to junior developers</li>
+
+                </div>
+            </div>
         </div>
 
         <div class="col-lg-6">
@@ -188,30 +213,182 @@
                 </div>
             </div>
 
-            <div class="card card-info">
+            <div class="card card-purple">
                 <div class="card-header">
-                    <h5>SKILLS & ABILITIES</h5>
+                    <h5>TECHNICAL SKILLS</h5>
                 </div>
                 <div class="card-body">
-                    <strong>TECHNICAL PROBLEM-SOLVING SKILLS</strong>
-                    <ul>
-                        <li>Ability to develop a database structures and queries with low complexity</li>
-                        <li>Analyze problem and determine a solution, fix, and/or workarounds in a given scenario</li>
-                    </ul>
+                    <p>
+                        <strong>WEB DEVELOPMENT</strong>
+                    </p>
+                    <div class="row">
+                        {{-- laravel --}}
+                        <div class="col-3 col-lg-2 text-center">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain.svg" />
+                            <p class="mt-3 mb-0">Laravel 5 - 8</p>
+                        </div>
 
-                    <strong>ADAPTABILITY & SELF LEARNING</strong>
-                    <ul>
-                        <li>Able to switch between programming languages; e.g.: PHP to Javascript to Jquery to Typescript</li>
-                        <li>Able to understand and deploy systems on different types of servers</li>
-                        <li>Able to keep up with new programming knowledge through self-learning</li>
-                    </ul>
+                        {{-- bootstrap --}}
+                        <div class="col-3 col-lg-2 text-center">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" />
+                            <p class="mt-3 mb-0">Bootstrap 3 - 4</p>
+                        </div>
 
-                    <strong>COMMUNICATION</strong>
-                    <li>Delivered the presentation and training of new/existing systems to customers</li>
-                    <li>Taught programming languages, concepts, and some domain knowledges to junior developers</li>
+                        {{-- jquery --}}
+                        <div class="col-3 col-lg-2 text-center">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-plain.svg" />
+                            <p class="mt-3 mb-0">JQuery</p>
+                        </div>
 
+                        {{-- sass --}}
+                        <div class="col-3 col-lg-2 text-center">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" />
+                            <p class="mt-3 mb-0">Sass</p>
+                        </div>
+
+                        {{-- php --}}
+                        <div class="col-3 col-lg-2 text-center">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-plain.svg" />
+                            <p class="mt-3 mb-0">PHP</p>
+                        </div>
+
+                        {{-- mysql --}}
+                        <div class="col-3 col-lg-2 text-center">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" />
+                            <p class="mt-3 mb-0">MySQL</p>
+                        </div>
+                    </div>
+
+                    <div class="mt-5"></div>
+                    <p>
+                        <strong>MOBILE APP DEVELOPMENT</strong>
+                    </p>
+                    <div class="row">
+                        {{-- ionic --}}
+                        <div class="col-3 col-lg-2 text-center">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ionic/ionic-original.svg" />
+                            <p class="mt-3 mb-0">Ionic</p>
+                        </div>
+
+                        {{-- angular --}}
+                        <div class="col-3 col-lg-2 text-center">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" />
+                            <p class="mt-3 mb-0">Ionic Angular</p>
+                        </div>
+
+                        {{-- typescript --}}
+                        <div class="col-3 col-lg-2 text-center">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" />
+                            <p class="mt-3 mb-0">Typescript</p>
+                        </div>
+
+                        {{-- pouch db --}}
+                        <div class="col-3 col-lg-2 text-center">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/couchdb/couchdb-original.svg" />
+                            <p class="mt-3 mb-0">Pouch DB</p>
+                        </div>
+
+                        {{-- sqlite --}}
+                        <div class="col-3 col-lg-2 text-center">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" />
+                            <p class="mt-3 mb-0">SQLite <br>(adapter)</p>
+                        </div>
+
+                    </div>
+
+                    <div class="mt-5"></div>
+                    <p>
+                        <strong>LINUX / SERVER</strong>
+                    </p>
+                    <div class="row">
+                        {{-- digital ocean --}}
+                        <div class="col-3 col-lg-2 text-center">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/digitalocean/digitalocean-original.svg" />
+                            <p class="mt-3 mb-0">Digital Ocean</p>
+                        </div>
+
+                        {{-- ubuntu --}}
+                        <div class="col-3 col-lg-2 text-center">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ubuntu/ubuntu-plain.svg" />
+                            <p class="mt-3 mb-0">Ubuntu</p>
+                        </div>
+
+                        {{-- bash --}}
+                        <div class="col-3 col-lg-2 text-center">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" />
+                            <p class="mt-3 mb-0">Bash</p>
+                        </div>
+
+                        {{-- nginx --}}
+                        <div class="col-3 col-lg-2 text-center">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg" />
+                            <p class="mt-3 mb-0">NGINX</p>
+                        </div>
+                    </div>
+
+                    <div class="mt-5"></div>
+                    <p>
+                        <strong>PACKAGES MANAGEMENT</strong>
+                    </p>
+                    <div class="row">
+                        {{-- composer --}}
+                        <div class="col-3 col-lg-2 text-center">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/composer/composer-original.svg" />
+                            <p class="mt-3 mb-0">Composer</p>
+                        </div>
+
+                        {{-- npm --}}
+                        <div class="col-3 col-lg-2 text-center">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg" />
+                            <p class="mt-3 mb-0">NPM</p>
+                        </div>
+
+                        {{-- jira --}}
+                        <div class="col-3 col-lg-2 text-center">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg" />
+                            <p class="mt-3 mb-0">Jira</p>
+                        </div>
+
+                        {{-- git --}}
+                        <div class="col-3 col-lg-2 text-center">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />
+                            <p class="mt-3 mb-0">Git</p>
+                        </div>
+                    </div>
+
+                    <div class="mt-5"></div>
+                    <p>
+                        <strong>PROJECT MANAGEMENT</strong>
+                    </p>
+                    <div class="row">
+                        {{-- bitbucket --}}
+                        <div class="col-3 col-lg-2 text-center">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bitbucket/bitbucket-original.svg" />
+                            <p class="mt-3 mb-0">Bitbucket</p>
+                        </div>
+
+                        {{-- github --}}
+                        <div class="col-3 col-lg-2 text-center">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
+                            <p class="mt-3 mb-0">Github</p>
+                        </div>
+
+                        {{-- vscode --}}
+                        <div class="col-3 col-lg-2 text-center">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" />
+                            <p class="mt-3 mb-0">VS Code</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    Logos are attributed from <a href="https://devicon.dev/">https://devicon.dev/</a>
                 </div>
             </div>
         </div>
     </div>
 @endsection
+
+{{-- devicon logo sets --}}
+@push('head')
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+@endpush
