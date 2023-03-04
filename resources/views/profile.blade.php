@@ -165,6 +165,10 @@
 
                 </div>
             </div>
+
+            <div class="card card-info">
+                <div class="card-header">STRENGTH & WEAKNESSES</div>
+            </div>
         </div>
 
         <div class="col-lg-6">
@@ -185,30 +189,40 @@
                         'name' => 'setting[company_code]',
                         'label' => 'Name',
                         'value' => 'Mohamad Yuzrie Bin Khalid',
+                        'form_class' => 'form-control-plaintext',
+                        'bold_label' => true,
                     ])
 
                     @include('components.form.general.text-w-label', [
                         'name' => 'setting[company_name]',
                         'label' => 'Phone No',
                         'value' => '+60 13-8008950',
+                        'form_class' => 'form-control-plaintext',
+                        'bold_label' => true,
                     ])
 
-                    @include('components.form.general.date-w-label', [
+                    @include('components.form.general.text-w-label', [
                         'name' => 'setting[company_no]',
-                        'label' => 'Date of Birth',
-                        'value' => '07/08/1995',
+                        'label' => 'DOB',
+                        'value' => '7th August 1995',
+                        'form_class' => 'form-control-plaintext',
+                        'bold_label' => true,
                     ])
 
                     @include('components.form.general.text-w-label', [
                         'name' => 'setting[company_address]',
                         'label' => 'Age',
                         'value' => '28',
+                        'form_class' => 'form-control-plaintext',
+                        'bold_label' => true,
                     ])
 
                     @include('components.form.general.text-w-label', [
                         'name' => 'setting[company_address]',
                         'label' => 'Hobby',
                         'value' => 'Books | Games | Board Games',
+                        'form_class' => 'form-control-plaintext',
+                        'bold_label' => true,
                     ])
                 </div>
             </div>
