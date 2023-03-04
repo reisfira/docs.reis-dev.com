@@ -167,7 +167,35 @@
             </div>
 
             <div class="card card-info">
-                <div class="card-header">STRENGTH & WEAKNESSES</div>
+                <div class="card-header">
+                    <h5>STRENGTH & WEAKNESSES</h5>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-6">
+                            <strong>TECHNICAL SKILLS</strong>
+                            <p>
+                                I am confident in my ability to designing the structures, development and deployment.
+                                I am also confident in my ability to learn new tech-stack.
+
+                                <br>
+                                I am used to self-learning (I do want to have a senior/mentor as guidance)
+                            </p>
+
+                            <strong>PASSIONATE</strong>
+                            <p>
+                                Coding is my passion. I take pride in being good at my job.
+                            </p>
+                        </div>
+                        <div class="col-6 border-left">
+                            <strong>COMMUNICATION (INTROVERT)</strong>
+                            <p>
+                                Some may have a hard time believing, but I am quite an introvert. There's a chance of social anxiety taking over when placed in an unfamiliar place while being unready.
+                                Therefore, I'd really like to not be in the position to talk to customers.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -305,7 +333,7 @@
                         {{-- sqlite --}}
                         <div class="col-3 col-lg-2 text-center">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" />
-                            <p class="mt-3 mb-0">SQLite <br>(adapter)</p>
+                            <p class="mt-3 mb-0">SQLite</p>
                         </div>
 
                     </div>
@@ -395,7 +423,10 @@
                     </div>
                 </div>
                 <div class="card-footer">
-                    Logos are attributed from <a href="https://devicon.dev/">https://devicon.dev/</a>
+                    Logos are attributed from
+                    <a href="https://devicon.dev/" target="_blank">
+                        <i class="devicon-devicon-plain"></i> https://devicon.dev/
+                    </a>
                 </div>
             </div>
         </div>
