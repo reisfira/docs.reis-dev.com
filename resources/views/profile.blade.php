@@ -4,7 +4,7 @@
 
 @section('content')
     <div class="row">
-        <div class="col-6">
+        <div class="col-lg-6">
             <div class="card card-info">
                 <div class="card-header">
                     <h5>EDUCATION</h5>
@@ -142,7 +142,7 @@
             </div>
         </div>
 
-        <div class="col-6">
+        <div class="col-lg-6">
             <div class="card card-primary">
                 <div class="card-header">
                     <h5>
@@ -153,7 +153,7 @@
                     </h5>
                 </div>
                 <div class="card-body">
-                    <img src="{{ asset('images/profile.jpg') }}" class="img-thumbnail rounded float-right d-block"
+                    <img src="{{ asset('images/profile.jpg') }}" class="img-thumbnail rounded float-right d-none d-xl-block"
                         alt="Yuzrie Profile" width="200">
 
                     @include('components.form.general.text-w-label', [
