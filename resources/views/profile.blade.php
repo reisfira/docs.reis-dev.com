@@ -17,8 +17,15 @@
                     </h5>
                 </div>
                 <div class="card-body">
-                    <img src="{{ asset('images/profile.jpg') }}" class="img-thumbnail rounded float-right d-none d-xl-block"
-                        alt="Yuzrie Profile" width="200">
+                    {{-- image appear on mobile screen center --}}
+                    <div class="text-center d-block d-sm-block d-md-none">
+                        <img src="{{ asset('images/profile.jpg') }}" class="img-thumbnail rounded" alt="Yuzrie Profile" width="200">
+                    </div>
+
+                    {{-- image appear on pc screen on the right --}}
+                    <div class="d-none d-md-block">
+                        <img src="{{ asset('images/profile.jpg') }}" class="img-thumbnail rounded float-right" alt="Yuzrie Profile" width="200">
+                    </div>
 
                     @include('components.form.general.text-w-label', [
                         'name' => 'setting[company_code]',
@@ -30,8 +37,8 @@
 
                     @include('components.form.general.text-w-label', [
                         'name' => 'setting[company_name]',
-                        'label' => 'Phone No',
-                        'value' => '+60 13-8008950',
+                        'label' => 'Contact',
+                        'value' => '+60 13-8008950 | mohamadyuzrie@gmail.com',
                         'form_class' => 'form-control-plaintext',
                         'bold_label' => true,
                     ])
