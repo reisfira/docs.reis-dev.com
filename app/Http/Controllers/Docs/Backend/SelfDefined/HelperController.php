@@ -10,8 +10,8 @@ class HelperController extends Controller
     public function index()
     {
         $data = [];
-        $data['sample'] = trim(file_get_contents(resource_path('views/components/form/general/select2-w-label.blade.php')));
+        $data['datatable'] = trim(file_get_contents(app_path('Helpers/datatable.php')));
 
-        return view('frontend.plugin.select2.index', $data);
+        return view('backend.self-defined.helper.index', $data);
     }
 }

@@ -33,3 +33,19 @@ Breadcrumbs::register('frontend', function($breadcrumbs, $module = 'Setting', $i
         $breadcrumbs->push($current_page);
     }
 });
+
+// new docs routes
+Breadcrumbs::register('breadcrumbs', function($breadcrumbs, $module_routes = [], $current_page = null)
+{
+    $breadcrumbs->parent('home');
+
+    if (!empty($module_routes)) {
+        foreach ($module_routes as $module => $route) {
+            $breadcrumbs->push($module, $route);
+        }
+    }
+
+    if (isset($current_page)) {
+        $breadcrumbs->push($current_page);
+    }
+});
